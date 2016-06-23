@@ -1,40 +1,46 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
+
     <head>
         <meta charset="utf-8">
-        <title>reponsive2</title>
+        <title>Alexis Barth</title>
         <meta name="viewport" content="initial-scale=1">
+        <link rel="shortcut icon" href="./image/icone_ptweb.jpg">
         <link rel="stylesheet" href="./reset.css">
         <link rel="stylesheet" href="./font-awesome.css">
         <link rel="stylesheet" href="style_onepage.css">
     </head>
     
-    <body>
         <header>
-            <div class="logo"><img src="./image/Logo_ptweb.png"></div> 
+            <div href="#accueil" class="logo"><img src="./image/Logo_ptweb.png"></div> 
             <ul>
-                <li><a href="#">A propos</a></li>
-                <li><a href="#">Compétences</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Me contacter</a></li>
+                <li><a href="#apropos">A propos</a></li>
+                <li><a href="#competence">Compétences</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Me contacter</a></li>
             </ul>
         </header>
-        <div class="accueil">
+    <body>
+        <div id="#accueil" class="accueil">
             <h1>WEBDESIGNER - GRAPHISTE</h1>
         </div>
-        
-        <div class="apropos">
+<!-- --------------------- A PROPOS ------------------------------ -->
+        <div id="apropos" class="apropos">
             <h2>A propos ..</h2>
+        <div class="avatar">
+        </div>
+            
         <div class="apropos_texte">
              <p>Novo denique perniciosoque exemplo idem Gallus ausus est inire flagitium grave, quod Romae cum ultimo dedecore temptasse aliquando dicitur Gallienus, et adhibitis paucis clam ferro succinctis vesperi per tabernas palabatur et conpita quaeritando Graeco sermone, cuius erat inpendio gnarus, quid de Caesare quisque sentiret. et haec confidenter agebat in urbe ubi pernoctantium luminum claritudo dierum solet imitari fulgorem. postremo agnitus saepe iamque, si prodisset, conspicuum se fore contemplans, non nisi luce palam egrediens ad agenda quae putabat seria cernebatur. et haec quidem medullitus multis gementibus agebantur.</p>
             </div>
-            
+<!-- ----------------- BOUTON CV -------------------------- -->     
             <div class="bouton_cv">
-                <p>Télécharger mon CV</p>
+                <button class="button_cv">Télécharger mon CV</button>
             </div>
         </div>
+<!-- ----------------- NIVEAU COMPETENCES ------------------- -->
         <div class="container_competence">
-            <div class="competence">
+            <div id="competence" class="competence">
                 <h2>Mes compétences :</h2>
                 <div class="container_niveau html">
                     <div class="niveau">
@@ -149,31 +155,71 @@
                 </div>
             </div>
         </div>
-        <div class="portfolio">
-            <h2>Portfolio</h2>
-<!-- ---------------Ligne 1 du portfolio------------------------- -->
+<!-- ----------------------- PORTFOLIO --------------------------- -->
+        <div id="portfolio" class="portfolio">
+                <h2>Portfolio</h2>
+                <!-- ---------------Ligne 1 du portfolio------------------------- -->
+            <!-- Le hippie -->
             <div class="ligne1col1">
-            </div>
-            <div class="ligne1col2">
-            </div>
-            <div class="ligne1col3">
-            </div>
+                <a href="#img_hippie">
+                    <img src="image/portfolio/Miniature/hippie-01.png">
+                </a>
+                <a href="#_" class="lightbox" id="img_hippie">
+                    <img class="hippie" src="image/portfolio/CREA1_Hippiechic_TP8TEST_BARTH_Alexis.jpg">
+                </a>
+            </div><!-- whitespace
             
-<!-- ---------------Ligne 2 du portfolio------------------------- -->
-            <div class="ligne2col1">
+            --><div class="ligne1col2">
+                <a href="#img_eachother">
+                    <img src="image/portfolio/Miniature/eachother-01.png">
+                </a>
+                <a href="#_" class="lightbox" id="img_eachother">
+                    <img class="eachother" src="image/portfolio/CREA1_TP2_BARTH_Alexis%20-%20Copie.png">
+                </a>
+            </div><!-- whitespace
+                
+            --><div class="ligne1col3">
+                <a href="#img_hendrix">
+                    <img src="image/portfolio/Miniature/hendrix-01.png">
+                </a>
+            <a href="#_" class="lightbox" id="img_hendrix">
+                <img class="hendrix" src="image/portfolio/TP6_BARTH_Alexis.jpg">
+            </a>
             </div>
-            <div class="ligne2col2">
-            </div>
-            <div class="ligne2col3">
-            </div>
-            
-<!-- ---------------Ligne 3 du portfolio------------------------- -->
-            <div class="ligne3col1">
-            </div>
-            <div class="ligne3col2">
-            </div>
-            <div class="ligne3col3">
-            </div>
+
+    <!-- ---------------Ligne 2 du portfolio------------------------- -->
+  
+
+    <!-- ---------------Ligne 3 du portfolio------------------------- -->
+
+
+        </div> 
+        
+        <div class="clearfix">
         </div>
+<!-- ---------------- CONTACT ---------------------------- -->
+            <div id="contact" class="contact">
+                <form action="" method="post">
+                <div>
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" />
+                </div>
+                <div>
+                    <label for="courriel">Courriel :</label>
+                    <input type="email" id="courriel" />
+                </div>
+                <div>
+                    <label for="message">Message :</label>
+                    <textarea id="message"></textarea>
+                </div>
+
+                <div class="button">
+                    <button type="submit">Envoyer</button>
+                </div>
+                </form>
+            </div>
     </body>
+    <footer>
+        
+    </footer>
 </html>
