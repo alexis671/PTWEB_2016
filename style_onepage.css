@@ -293,6 +293,10 @@ h1{
     background-color: #C1272D;
 }
 /* ******************** PORTFOLIO ******************************** */
+.portfolio_container{
+    background-color: #D8D8D8;
+}
+
 .portfolio{
     width: 90%;
     margin-left: auto;
@@ -323,10 +327,8 @@ h1{
 /* ********************Lightbox test**************************** */
 
 .lightbox{
-    /** Default lightbox to hidden */
 	display: none;
 
-	/** Position and style */
 	position: fixed;
 	z-index: 999;
 	width: 100%;
@@ -338,15 +340,14 @@ h1{
 }
 
 .lightbox:target {
-	/** Remove default browser outline */
+
 	outline: none;
 
-	/** Unhide lightbox **/
+
 	display: block;
 }
 
 .lightbox .hippie{
-    /** Pad the lightbox image */
 	max-width: 70vh;
 	max-height: 100vh;
 	margin-top: 2%;
@@ -354,14 +355,12 @@ h1{
 
 
 .lightbox .eachother{
-    /** Pad the lightbox image */
 	max-width: 100vh;
 	max-height: 80vh;
 	margin-top: 2%;
 }
 
 .lightbox .hendrix{
-    /** Pad the lightbox image */
 	max-width: 60vh;
 	max-height: 90vh;
 	margin-top: 2%;
@@ -407,7 +406,8 @@ h1{
 }
 
 .lightbox .maquette_piclab{
-    max-width: 100vh;
+    max-width: 80vh;
+    max-height: 90vh;
     margin-top:2%;
 }
 
