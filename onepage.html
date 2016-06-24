@@ -9,11 +9,16 @@
         <link rel="stylesheet" href="./reset.css">
         <link rel="stylesheet" href="./font-awesome.css">
         <link rel="stylesheet" href="style_onepage.css">
+
     </head>
     
         <header>
-            <div href="#accueil" class="logo"><img src="./image/Logo_ptweb.png"></div> 
-            <ul>
+            <div class="logo">
+                <a href="#accueil">
+                <img src="./image/Logo_ptweb.png">
+                </a>
+            </div> 
+            <ul id="top-menu">
                 <li><a href="#apropos">A propos</a></li>
                 <li><a href="#competence">Compétences</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
@@ -21,7 +26,7 @@
             </ul>
         </header>
     <body>
-        <div id="#accueil" class="accueil">
+        <div id="accueil" class="accueil">
             <h1>WEBDESIGNER - GRAPHISTE</h1>
         </div>
 <!-- --------------------- A PROPOS ------------------------------ -->
@@ -160,7 +165,7 @@
                 <h2>Portfolio</h2>
                 <!-- ---------------Ligne 1 du portfolio------------------------- -->
             <!-- Le hippie -->
-            <div class="ligne1col1">
+            <div class="responsive ligne1col1">
                 <a href="#img_hippie">
                     <img src="image/portfolio/Miniature/hippie-01.png">
                 </a>
@@ -169,7 +174,7 @@
                 </a>
             </div><!-- whitespace
             
-            --><div class="ligne1col2">
+            --><div class="responsive ligne1col2">
                 <a href="#img_eachother">
                     <img src="image/portfolio/Miniature/eachother-01.png">
                 </a>
@@ -178,21 +183,87 @@
                 </a>
             </div><!-- whitespace
                 
-            --><div class="ligne1col3">
-                <a href="#img_hendrix">
-                    <img src="image/portfolio/Miniature/hendrix-01.png">
-                </a>
-            <a href="#_" class="lightbox" id="img_hendrix">
-                <img class="hendrix" src="image/portfolio/TP6_BARTH_Alexis.jpg">
-            </a>
-            </div>
+            --><div class="responsive ligne1col3">
+                    <a href="#img_hendrix">
+                        <img src="image/portfolio/Miniature/hendrix-01.png">
+                    </a>
+                    <a href="#_" class="lightbox" id="img_hendrix">
+                        <img class="hendrix" src="image/portfolio/TP6_BARTH_Alexis.jpg">
+                    </a>
+                </div>
 
     <!-- ---------------Ligne 2 du portfolio------------------------- -->
-  
+            <div class="responsive ligne2col1">
+                <a href="#img_meltdown_fidelite_front">
+                    <img src="image/portfolio/Miniature/meltdown_fidelite_front-01.png">
+                </a>
+                <a href="#_" class="lightbox" id="img_meltdown_fidelite_front">
+                    <img class="meltdown_front" src="image/portfolio/Meltdown_fidelite_front.png">
+                </a>
+            </div><!-- whitespace
+            
+            --><div class="responsive ligne2col2">
+                <a href="#img_meltdown_fidelite_back">
+                    <img src="image/portfolio/Miniature/meltdown_fidelite_back-01.png">
+                </a>
+                <a href="#_" class="lightbox" id="img_meltdown_fidelite_back">
+                    <img class="meltdown_back" src="image/portfolio/Fidelite_back.png">
+                </a>
+            </div><!-- whitespace
+            
+            --><div class="responsive ligne2col3">
+                <a href="https://ihavitrine.u-strasbg.fr/projets/mmi1/2015-2016/PTCOM2_Barth_Stefan/?lang=fr" target="_blank">
+                    <img src="image/portfolio/Miniature/meltdown-01.png">
+                </a>
+            </div>
+
 
     <!-- ---------------Ligne 3 du portfolio------------------------- -->
+            <div class="responsive ligne3col1">
+                <a href="#img_logo_ab">
+                    <img src="image/portfolio/Miniature/logo_ab-01.png">
+                </a>
+                <a href="#_" class="lightbox" id="img_logo_ab">
+                    <img class="logo_ab" src="image/portfolio/Logo_AB.png">
+                </a>
+            </div><!-- whitespace
 
+        --><div class="responsive ligne3col2">
+                <a href="#img_logo_divers">
+                    <img src="image/portfolio/Miniature/logo_divers-01.png">
+                </a>
+                <a href="#_" class="lightbox" id="img_logo_divers">
+                    <img class="logo_divers" src="image/portfolio/Logo_divers-01.png">
+                </a>
+            </div><!-- whitespace
 
+     --><div class="responsive ligne3col3">
+                <a href="#img_logo_garage">
+                    <img src="image/portfolio/Miniature/logo_garage-01.png">
+                </a>
+                <a href="#_" class="lightbox" id="img_logo_garage">
+                    <img class="logo_garage" src="image/portfolio/logo_garage-01.png">
+                </a>
+            </div>
+<!-- ---------------Ligne 4 du portfolio------------------------- -->
+            <div class="responsive ligne4col1">
+                <a href="#img_maquette_piclab">
+                    <img src="image/portfolio/Miniature/maquette_piclab-01.png">
+                </a>
+                <a href="#_" class="lightbox" id="img_maquette_piclab">
+                    <img class="maquette_piclab" src="image/portfolio/maquette_piclab.jpg">
+                </a>
+            </div><!-- whitespace
+
+        --><div class="responsive ligne4col2">
+                <a href="#img_maquette_convert">
+                    <img src="image/portfolio/Miniature/maquette_appli_convertisseur-01.png">
+                </a>
+                <a href="#_" class="lightbox" id="img_maquette_convert">
+                    <img class="maquette_convert" src="image/portfolio/maquette_application_convertisseur.png">
+                </a>
+            </div>
+            
         </div> 
         
         <div class="clearfix">
@@ -218,6 +289,59 @@
                 </div>
                 </form>
             </div>
+<!-- ------------------- SCRIPT MENU --------------------------- -->
+        <script type='text/javascript' src='http://code.jquery.com/jquery-1.7.1.js'></script>
+        
+        <script type='text/javascript'>//<![CDATA[ 
+            $(window).load(function(){
+            // Cache selectors
+            var lastId,
+            topMenu = $("#top-menu"),
+            topMenuHeight = topMenu.outerHeight()+15,
+            // All list items
+            menuItems = topMenu.find("a"),
+            // Anchors corresponding to menu items
+            scrollItems = menuItems.map(function(){
+            var item = $($(this).attr("href"));
+            if (item.length) { return item; }
+            });
+
+            // Bind click handler to menu items
+            // so we can get a fancy scroll animation
+            menuItems.click(function(e){
+            var href = $(this).attr("href"),
+            offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+            $('html, body').stop().animate({ 
+            scrollTop: offsetTop
+            }, 300);
+            e.preventDefault();
+            });
+
+            // Bind to scroll
+            $(window).scroll(function(){
+            // Get container scroll position
+            var fromTop = $(this).scrollTop()+topMenuHeight;
+
+            // Get id of current scroll item
+            var cur = scrollItems.map(function(){
+            if ($(this).offset().top < fromTop)
+            return this;
+            });
+            // Get the id of the current element
+            cur = cur[cur.length-1];
+            var id = cur && cur.length ? cur[0].id : "";
+
+            if (lastId !== id) {
+            lastId = id;
+            // Set/remove active class
+            menuItems
+            .parent().removeClass("active")
+            .end().filter("[href=#"+id+"]").parent().addClass("active");
+            } 
+            });
+            });//]]> 
+
+        </script>
     </body>
     <footer>
         
