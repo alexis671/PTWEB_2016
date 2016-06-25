@@ -338,6 +338,9 @@ h1{
     display: inline-block;
 } 
 
+.responsive:hover{
+    opacity: 0.5;   
+}
 /* ********************Lightbox test**************************** */
 
 .lightbox{
