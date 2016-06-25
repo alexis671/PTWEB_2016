@@ -72,7 +72,7 @@ color: #FFFFFF;
 .accueil{
     z-index: -500;
     
-    background: url(../image/Fond_pg01_ptweb.png) center;
+    background: url(../image/Fond_pg01_ptweb.jpg) center;
     background-size: cover;
     background-color: #000000;
     
@@ -433,7 +433,7 @@ h1{
 /* ******************** CONTACT *********************************** */
 .contact{
     background-color: #000000;
-    background-image: url(../image/Fond_pg01_ptweb.png);
+    background-image: url(../image/Fond_pg01_ptweb.jpg);
     background-size: cover;
     
     width :100%;
