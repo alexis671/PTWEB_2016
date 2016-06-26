@@ -8,6 +8,10 @@
     src: url('../Font/Oswald-Stencil.ttf');
 }
 
+@font-face{
+    font-family: "Sofia";
+    src: url('../Font/Sofia/SofiaProLight.otf');
+}
 /* *************************HEADER ******************************* */
 header{
     background: #000000;
@@ -45,7 +49,7 @@ li{
     display: inline;
     line-height: 100px;
     height: 100px;
-    font-family: 'Agency FB';
+    font-family: 'Sofia';
     margin-right: 20px;
 }
 
@@ -146,16 +150,15 @@ h1{
 }
 
 .apropos .apropos_texte p{
-    font-family: 'Agency FB';
-    font-size: 25pt;
+    font-family: 'Sofia';
+    font-size: 22pt;
 }
 
 .button_cv {
-    font-family: 'Agency FB';
+    font-family: 'Sofia';
     font-size: 18pt;
     
     margin-left: 60%;
-    margin-top: 50px;
     margin-bottom: 50px; 
     
     border: 0;
@@ -236,7 +239,7 @@ h1{
 
 .container_niveau .nom_niveau{
     font-size: 20pt;
-    font-family: 'Agency FB';
+    font-family: 'Sofia';
     text-align: center;
     border: 2px solid #000000;
     width: 100%;
@@ -246,7 +249,7 @@ h1{
 /* Le nom photoshop et illustrator sont trop long donc petite taille police */
 .container_niveau .nom_niveau_petit{
     font-size: 18pt;
-    font-family: 'Agency FB';
+    font-family: 'Sofia';
     text-align: center;
     border: 2px solid #000000;
     width: 100%;
@@ -328,7 +331,7 @@ h1{
 .portfolio h2{
     font-family: 'Oswald';
     font-weight: bold;
-    font-size: 35pt;
+    font-size: 45pt;
     text-align: center;
     
     width: 100%;
@@ -461,8 +464,8 @@ h1{
 
 
 label{
-    font-size: 18pt;
-    font-family: 'Agency FB';
+    font-size: 20pt;
+    font-family: 'Sofia';
     font-weight: bold;
     
     color: #000000;
@@ -477,9 +480,12 @@ label{
 
 input{
     border: 1px solid #000000;
+    border-left: 4px solid #C4272D;
     border-radius: 7px 7px;
     width: 50%;
-    height: 30px;
+    height: 40px;
+    font-size: 16pt;
+    padding-left: 15px;
 }
 
 textarea{
@@ -489,13 +495,19 @@ textarea{
     max-width: 50%;
     border-radius: 7px 7px;
     border: 1px solid #000000;
+    border-left: 4px solid #C4272D;
+    padding-left: 15px;
+    font-size: 16pt;
 }
 
 button{
+    font-size: 16pt;
     padding: 5px;
     margin-left: 60%;
     border-radius: 5px 5px;
+    border-left: 4px solid #C4272D;
 }
+
 /* ********************* FOOTER *********************************** */
 
 footer{
@@ -509,7 +521,7 @@ footer{
 }
 
 .container p{
-    font-family: 'Agency FB';
+    font-family: 'Sofia';
     font-size: 18pt;
     color: #FFFFFF;
     display: inline;
@@ -537,6 +549,11 @@ span{
         height: 780px;
         line-height: 780px;
         font-size:50pt;
+        font-family: "Agency FB";
+    }
+    
+    a{
+        font-size: 16pt;
     }
     
     .apropos .apropos_texte p{
@@ -572,11 +589,20 @@ span{
     }
     
     .nom_niveau_petit h3{
+        font-size: 15pt;
+    }
+
+    .nom_niveau h3{
         font-size: 16pt;
     }
+        
     
-    .nom_niveau h3{
-        font-size: 18pt;
+    label{
+     font-size: 15pt;   
+    }
+    
+    button{
+        background-color: #FFFFFF;
     }
 }
 
@@ -590,5 +616,16 @@ span{
     h1{
         height: 1024px;
         line-height: 1024px;
+    }
+        .nom_niveau_petit h3{
+        font-size: 13pt;
+    }
+
+    .nom_niveau h3{
+        font-size: 12pt;
+    }
+        
+    .photoshop h3{
+        font-size: 11pt;   
     }
 }

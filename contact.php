@@ -1,4 +1,5 @@
 <?php
+echo 'Votre message a bien ete envoye';
 /*
 	********************************************************************************************
 	CONFIGURATION
@@ -54,7 +55,7 @@ function IsEmail($email)
  
 // formulaire envoyé, on récupère tous les champs.
 $nom     = (isset($_POST['nom']))     ? Rec($_POST['nom'])     : '';
-$email   = (isset($_POST['email']))   ? Rec($_POST['email'])   : '';
+$email   = (isset($_POST['courriel']))   ? Rec($_POST['courriel'])   : '';
 $message = (isset($_POST['message'])) ? Rec($_POST['message']) : '';
  
 // On va vérifier les variables et l'email ...
@@ -113,7 +114,7 @@ if (isset($_POST['envoi']))
 		// une des 3 variables (ou plus) est vide ...
 		echo '<p>'.$message_formulaire_invalide.'</p>';
 		$err_formulaire = true;
-	};
+	}
 }; // fin du if (!isset($_POST['envoi']))
  
 ?>
