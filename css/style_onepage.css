@@ -485,6 +485,7 @@ input{
     width: 50%;
     height: 40px;
     font-size: 16pt;
+    font-family: 'Sofia';
     padding-left: 15px;
 }
 
@@ -498,6 +499,7 @@ textarea{
     border-left: 4px solid #C4272D;
     padding-left: 15px;
     font-size: 16pt;
+    font-family: 'Sofia';
 }
 
 button{
