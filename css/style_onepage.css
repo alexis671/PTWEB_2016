@@ -309,6 +309,7 @@ h1{
 /* ******************** PORTFOLIO ******************************** */
 .portfolio_container{
     background-color: #D8D8D8;
+    padding-bottom: 10%;
 }
 
 .portfolio{
@@ -442,6 +443,8 @@ h1{
     padding: 10%;
     margin-left: auto;
     margin-right: auto;
+    
+    border-top: 20px solid #000000;
 }
 
 .contact div{
@@ -503,6 +506,11 @@ footer{
     font-size: 18pt;
     color: #FFFFFF;
     display: inline;
+}
+
+span{
+    font-weight: bold;
+    color: #C4272D;
 }
 /* ********************* CLEARFIX ********************************* */
 .clearfix {
