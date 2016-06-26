@@ -26,6 +26,10 @@ header{
     float: left;
 }
 
+.logo_hover:hover{
+    border-top: 0px solid white;   
+}
+
 img{
     width: 100%;
     height: 100%;
@@ -174,6 +178,9 @@ h1{
   transform: translateY(3px);
 }
 
+.bouton:hover{
+       border-top: 0px solid white;
+}
 
 /* ********************* COMPETENCES ***************************** */
 .container_competence{
